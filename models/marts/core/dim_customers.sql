@@ -12,7 +12,6 @@ with customer_orders as (
     group by 1
 
 ),
-
 final as (
 
     select
@@ -28,5 +27,4 @@ final as (
     left join customer_orders using (customer_id)
 
 )
-
 select * from final
